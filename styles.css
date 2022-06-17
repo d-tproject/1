@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/*global reset*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*fix up for older browsers to draw the new semantic elements*/
+
+header,
+nav,
+main,
+aside,
+article,
+section,
+footer,
+figure,
+figcaption {
+    display: block;
+}
+
+html {
+    font-size: 10px;
+    font-family: Roboto, 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+
+/*text styling*/
+p {
+    max-width: 500px;
+    margin: auto;
+
+}
+
+h1 {
+    font-weight: bold;
+    color: #673131;
+    font-size: 10rem;
+    line-height: 1em;
+    text-align: center;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 1.25em;
+    padding: 0.5rem 0;
+    color: #673131;
+    text-align: center;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 1.3;
+    padding: 0.5rem 0;
+    color: #673131;
+    text-align: center;
+    max-width: 960px;
+}
+
+h4 {
+    font-weight: normal;
+    font-size: 5rem;
+    line-height: 1.25em;
+    padding: 0.5rem 0;
+    color: #673131;
+    text-align: center;
+}
+
+p {
+
+    font-size: 1.6rem;
+    line-height: 1.375em;
+    padding: 1rem 0;
+    color: #aaaaaa;
+    font-family: Lato, sans-serif;
+}
+
+/*nav bar*/
+#nav {
+    position: fixed;
+    left: 50px;
+    top: 300px;
+    text-align: left;
+    background-color: rgba(44, 22, 0, 0.47);
+    padding: 20px;
+    font-size: 2.5rem;
+    line-height: 1.3;
+}
+
+#nav ul {
+    list-style: none;
+}
+
+#nav a:link {
+    text-decoration-line: none;
+}
+
+/*basic links*/
+
+a:link {
+    color: #f29d00;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ffbe2c;
+}
+
+
+/*button on homepage*/
+.button1 {
+    border: none;
+    background: url(images/icondown-01.png) no-repeat;
+    background-size: 80px;
+    background-position: center;
+    height: 80px;
+    width: 80px;
+    opacity: 0.4;
+    transition-duration: 2s;
+    transition-property: opacity;
+    margin-top: 150px;
+
+}
+
+.button1:hover {
+    opacity: 1;
+}
+
+/*slider credit to http://thenewcode.com/750/Crash-Zoom-Into-An-Image-With-A-HTML5-Range-Slider*/
+
+.slider1 {
+    display: block;
+    width: 50%;
+    margin: 2rem auto;
+}
+
+/*images and videos*/
+img {
+    max-width: 100%;
+    display: block;
+    align-self: center;
+    height: auto;
+    object-fit: cover;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.small {
+    overflow: hidden;
+    border: 1px solid rgba(143, 207, 211, 0);
+    max-width: 960px;
+
+
+}
+
+/*liquid text effect credit to https://codepen.io/Callum-Martin/pen/aWpdGw */
+#liquidanimate {
+    font-weight: bold;
+    max-width: 960px;
+    height: auto;
+    text-align: center;
+}
+
+/*Text changing animation credit to https://www.geeksforgeeks.org/how-to-create-text-changing-animation-effect-using-css/*/
+
+#txtstyle {
+    color: #951105;
+    font-weight: bold;
+    font-size: 10rem;
+}
+
+span::before {
+    content: "Exploitation.";
+    animation: animate infinite 8s;
+    padding-left: 10px;
+}
+
+@keyframes animate {
+
+    0% {
+        content: "Greenhouse gases.";
+    }
+
+    50% {
+        content: "Burning fuel.";
+    }
+
+    75% {
+        content: "Oil drilling.";
+    }
+}
+
+
+
+/*parallax effect on scroll credit to https://www.youtube.com/watch?v=rLrLJQBG_qo&ab_channel=Filip*/
+
+.parallax_wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px;
+    scroll-behavior: smooth;
+
+
+}
+
+.intro_screen {
+    height: 100vh;
+    background-image: url(images/patrick-hendry-6xeDIZgoPaw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+
+}
+
+.starttop {
+    display: flex;
+    flex-basis: 100%;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.outro_screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+
+}
+
+.parallax_group {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+
+}
+
+.parallax_layer {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    flex-basis: 100%;
+    margin: 0 auto;
+
+}
+
+
+.base_layer {
+    transform: translateZ(-300px) scale(2);
+}
+
+.mid_layer {
+    transform: translateZ(0);
+}
+
+.top_layer {
+    transform: translateZ(210px) scale(0.3);
+    justify-items: center;
+    align-content: center;
+
+}
+
+.topbg_layer {
+    background-color: rgba(0, 0, 0, 0.87);
+    padding: 50px;
+    max-width: 960px;
+    justify-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+/*section layers*/
+
+#intro {
+    z-index: 0;
+    text-align: center;
+    padding-top: 250px;
+    align-items: center;
+
+}
+
+.spilllayer {
+    margin: 0 auto;
+    color: black;
+}
+
+#group1 {
+    z-index: -1;
+}
+
+#group1 > .base_layer {
+    background-image: url(images/jon-moore-wRk_JT9jBTQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#nextgroup > .mid_layer {
+    background-color: #000000;
+    align-content: center;
+    justify-items: center;
+}
+
+#group2 > .mid_layer {
+    background-image: url(images/brina-blum-rsrhoWJe8j0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-items: center;
+    align-content: center;
+    overflow: hidden;
+}
+
+.g2opacity {
+    background-color: rgba(0, 0, 0, 0.84);
+    padding: 50px;
+    max-width: 960px;
+}
+
+#vidsmoke {
+    max-width: 800px;
+}
+
+
+#group3 > .mid_layer {
+    background-color: #000000;
+
+}
+
+.text03 {
+    margin: 0 auto;
+}
+
+#group4 {
+    flex-direction: column;
+    justify-items: center;
+    padding: 50px;
+}
+
+
+#group4 > .mid_layer {
+    background-image: url(images/Amoco_Cadiz_1_edit1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.blob4 {
+    flex-direction: row;
+    opacity: 20%;
+    flex-wrap: wrap;
+}
+
+#group5 > .mid_layer {
+    background-color: #000000;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+
+}
+
+#regional {
+    max-width: 1100px;
+}
+
+#outro {
+    padding: 50px;
+    background-image: url(images/earth-g774060efb_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+/*---------------------------*/
+
+/*----- MEDIA QUERY - -------*/
+
+/*--- for larger screens----*/
+
+@media only screen and (min-width:720px) {
+
+    img {
+        max-width: 960px;
+    }
+
+}
+
+/*-------------------------------------*/
+/*smaller screens*/
+
+@media screen and (max-width: 990px) {
+    .parallax_layer {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+
+    #regional {
+        max-width: 100%;
+    }
+
+
+    h1 {
+        font-size: 7rem;
+    }
+
+    .small {
+        max-width: 100%;
+    }
+
+    .blob4 {
+        visibility: hidden;
+    }
+
+    #nav {
+        visibility: hidden;
+    }
+
+    #txtstyle {
+        font-size: 8rem;
+    }
+}

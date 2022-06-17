@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<!--  head - useful behind the scenes stuff  -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Informing the effects of using petroleum and its contribution to climate change.">
+    <meta name="viewport" content="width=device-width">
+    <title>Petroleum</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+
+</head>
+<!--  body - the visible content on the page  -->
+
+<body>
+    <!--parallax code credit to https://www.youtube.com/watch?v=rLrLJQBG_qo&ab_channel=Filip
+ -->
+
+    <div class="parallax_wrapper" id="para">
+        <div class="parallax_group intro_screen" id="intro">
+        </div>
+        <div class="parallax_layer starttop">
+
+
+            <!--navigation sidebar-->
+            <div id="nav">
+                <ul>
+                    <li><a href="#group1">Intro</a></li>
+                    <li><a href="#nextgroup">Environment</a></li>
+                    <li><a href="#group2">Ocean Acidification</a></li>
+                    <li><a href="#group3">Sea Levels</a></li>
+                    <li><a href="#group4">Oil Spills</a></li>
+                    <li><a href="#group5">World Map</a></li>
+                    <li><a href="#outro">Oil Drilling</a></li>
+                </ul>
+
+                <!--Home page-->
+            </div>
+            <h1>Petroleum</h1>
+            <p class="spilllayer">(<b><a href="https://en.wikipedia.org/wiki/Petroleum">Wikipedia page</a></b>).</p>
+            <p class="spilllayer">(<b><a href="https://unsplash.com/photos/6xeDIZgoPaw">Factories with smoke</a></b> by Patrick Hendry on Unsplash accessed 13/12/2021).</p> <input type="button" class="button1" onClick="document.getElementById('group1').scrollIntoView();" alt="Arrow Down Icon" />
+
+        </div>
+
+
+        <!--Section Intro-->
+        <div class="parallax_group" id="group1">
+            <div class="parallax_layer base_layer">
+            </div>
+            <div class="parallax_layer top_layer">
+                <div class="topbg_layer">
+                    <h2>What is Petroleum?</h2>
+                    <p> Petroleum, also known as crude oil and oil, is a naturally occurring, <b>yellowish-black liquid</b> found in geological formations <b>beneath the Earth's surface</b>. It is commonly <b>refined into various types of fuels</b>. The name petroleum covers both naturally occurring unprocessed crude oil and petroleum products that are made up of refined crude oil. A <b>fossil fuel</b>, petroleum is <b>formed</b> when large quantities of dead organisms, mostly zooplankton and algae, are <b>buried</b> underneath sedimentary rock and subjected to both <b>intense heat and pressure.</b></p>
+                    <img src="images/720px-Petroleum_sample.jpg">
+                    <p>(<b><a href="https://en.wikipedia.org/wiki/File:Petroleum_sample.jpg">Petroleum sample</a></b> by Nefronus on Wikipedia accessed 15/12/2021).</p>
+                    <p>(<b><a href="https://unsplash.com/photos/wRk_JT9jBTQ">White and brown abstract painting</a></b> by Jon Moore on Unsplash accessed 13/12/2021).</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--Section 2-->
+
+        <div class="parallax_group" id="nextgroup">
+            <div class="parallax_layer mid_layer">
+
+
+                <h4>How is Petroleum harming the environment?</h4><br><br>
+                <h1><span id="txtstyle"></span></h1>
+            </div>
+        </div>
+
+
+
+        <!--Section 3-->
+        <div class="parallax_group" id="group2">
+            <div class="parallax_layer mid_layer">
+                <div class="g2opacity">
+                    <h2>Greenhouse gases</h2>
+                    <p>As of 2018, about a quarter of annual global <b>greenhouse gas emissions</b> is the carbon dioxide from <b>burning petroleum</b> (plus methane leaks from the industry). Along with the burning of coal, <b>petroleum combustion</b> is the largest contributor to the increase in atmospheric CO2. <b>Atmospheric CO2 has risen</b> over the last 150 years to current levels of over 415 ppmv, from the 180–300 ppmv of the prior 800 thousand years.</p>
+
+
+                    <video src="images/productionID_4404083.mp4" id="vidsmoke" autoplay muted loop alt="Smoke coming out from the factory"></video>
+
+                    <p><b><a href="https://www.pexels.com/video/smoke-coming-out-from-the-factory-4404083/">(Smoke coming out from the factory</a></b> by Kelly L on Pexels accessed 15/12/2021).</p>
+
+                    <p>(<b><a href="https://unsplash.com/photos/rsrhoWJe8j0">Gray building with smoke</a></b> by Brina Blum on Unsplash accessed 15/12/2021).</p>
+                </div>
+            </div>
+
+            <div class="parallax_layer top_layer">
+
+            </div>
+
+        </div>
+
+
+
+        <!--Section 4-->
+        <div class="parallax_group" id="group3">
+            <div class=" parallax_layer mid_layer">
+                <h3>The global sea level is rising...</h3>
+                <div class="small">
+                    <img src="images/noaa-NBwP2jjnATE-unsplash.jpg" alt="A calving glacier" id="img2">
+                </div>
+                <p class="text03">(<b><a href="https://unsplash.com/photos/NBwP2jjnATE">A calving glacier</a></b> by NOAA on Unsplash accessed 13/12/2021).</p>
+
+                <input type="range" min="1" max="1.8" value="1" step="0.1" id="slider1" step="1">
+
+            </div>
+            <div class="parallax_layer top_layer">
+
+
+            </div>
+        </div>
+
+
+
+        <!--Section 5-->
+        <div class="parallax_group" id="group4">
+            <div class=" parallax_layer mid_layer">
+                <div class="g2opacity">
+                    <!-- Liquid text effect credit to https://codepen.io/Callum-Martin/pen/aWpdGw-->
+                    <svg id="liquidanimate" viewbox="0 0 100 20">
+                        <defs>
+                            <linearGradient id="gradient">
+                                <stop color="#000" />
+                            </linearGradient>
+                            <pattern id="wave" x="0" y="-0.5" width="100%" height="100%" patternUnits="userSpaceOnUse">
+                                <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)">
+                                    <animateTransform attributeName="transform" begin="0s" dur="1.5s" type="translate" from="0,0" to="40,0" repeatCount="indefinite" />
+                                </path>
+                            </pattern>
+                        </defs>
+                        <text text-anchor="middle" x="50" y="15" font-size="2rem" fill="white" fill-opacity="0.5">Oil Spills</text>
+                        <text text-anchor="middle" x="50" y="15" font-size="2rem" fill="url(#wave)" fill-opacity="1">Oil Spills</text>
+                    </svg>
+
+                    <p><b>Oil extraction</b> is simply the <b>removal of oil</b> from the reservoir (oil pool). Oil is often recovered as a water-in-oil emulsion, and specialty chemicals called demulsifiers are used to <b>separate the oil from water</b>. Oil extraction is <b>costly</b> and often <b>environmentally damaging</b>. Offshore exploration and extraction of oil <b>disturb the surrounding marine environment</b>.</p>
+                    <p>(<b><a href="https://commons.wikimedia.org/wiki/File:Oil_spill_in_San_Francisco_bay.jpg">Amoco Cadiz grounding and oil spill</a></b> by Noaa on Wikipedia accessed 13/12/2021).</p>
+                </div>
+            </div>
+            <div class="parallax_layer top_layer blob4">
+                <!-- SVG from blobbb.fun-->
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#795548" d="M41,-42.8C54.7,-37.4,68.4,-25.9,74,-10.6C79.6,4.7,77.1,23.9,68.8,41.2C60.6,58.4,46.5,73.8,30.3,77C14.1,80.2,-4.3,71.2,-15.6,59.8C-27,48.3,-31.3,34.4,-42.6,21.4C-53.9,8.4,-72.3,-3.8,-72.9,-15C-73.5,-26.3,-56.4,-36.6,-41.3,-41.7C-26.2,-46.8,-13.1,-46.8,0.3,-47.2C13.7,-47.5,27.3,-48.2,41,-42.8Z" transform="translate(100 100)" />
+                    />
+                </svg>
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#795548" d="M35.4,-37.9C44.3,-34.8,48.6,-22.1,51.1,-8.9C53.6,4.3,54.2,18,50.1,32.6C46,47.1,37.2,62.6,24.7,66.6C12.2,70.5,-3.9,62.9,-14.8,53.4C-25.6,43.9,-31,32.5,-42.2,20.7C-53.4,8.9,-70.5,-3.3,-71.5,-15.3C-72.5,-27.3,-57.6,-39.1,-43.1,-41.2C-28.5,-43.3,-14.2,-35.6,-0.5,-35.1C13.3,-34.5,26.6,-41,35.4,-37.9Z" transform="translate(100 100)" />
+                    />
+                </svg>
+            </div>
+        </div>
+
+
+
+        <!--Section 6-->
+        <div class="parallax_group" id="group5">
+            <div class=" parallax_layer mid_layer">
+                <h2>Air pollution</h2>
+                <p>"Every year, around <b>7 million deaths</b> are due to exposure from both outdoor and household air pollution"(WHO).</p>
+
+                <!--  world map created with mapchart.net-->
+                <img id="regional" src="images/Regional_estimates_of_deaths_from_air_pollution.png" alt="World map of regional estimates of deaths from air pollution">
+                <p>Regional estimates of deaths from air pollution (<b><a href="https://www.ccacoalition.org/en/news/world-health-organization-releases-new-global-air-pollution-data">data</a></b> from WHO).</p>
+            </div>
+            <div class="parallax_layer top_layer">
+
+            </div>
+        </div>
+
+
+
+        <!--Last section-->
+        <div class="parallax_group outro_screen" id="outro">
+            <div class="topbg_layer">
+                <h2>Oil Drilling</h2>
+                <p>Petroleum has mostly been <b>recovered by oil drilling</b>. Drilling is carried out after studies of structural geology, sedimentary basin analysis, and reservoir characterisation. <b>Recent improvements to technologies</b> have also led to <b>exploitation</b> of other <b>unconventional reserves</b> such as oil sands and oil shale. Petroleum is used in manufacturing a wide variety of materials, and it is estimated that the <b>world consumes about 100 million barrels each day</b>.</p><br>
+                <video src="images/pexels-cityxcape-10227583.mp4" autoplay muted loop alt="Aerial shot of landscape with oil drilling"></video>
+                <p>(<b><a href="https://www.pexels.com/video/aerial-shot-of-landscape-10227583/">Aerial shot of landscape</a></b> by CityXcape on Pexels accessed 15/12/2021).</p>
+                <p>(<b><a href="https://pixabay.com/photos/earth-clay-soil-clay-furrow-dig-298042/">Soil furrow</a></b> by Sonja on Pixabay accessed 13/12/2021).</p>
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
